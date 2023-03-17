@@ -1,5 +1,8 @@
 .App {
     display: flex;
     flex-direction: column;
-    max-width: 1245;
+    max-width: 1245px;
+    margin: auto;
+    margin-top: 1vh;
+    
 }

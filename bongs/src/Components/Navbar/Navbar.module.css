@@ -1,0 +1,40 @@
+.Logo {
+    width: 20vw;
+    max-width: 250px;
+}
+
+.Text {
+    cursor: pointer;
+}
+
+
+.LangButton {
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.Text:after {
+    cursor: pointer;    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #0055B8;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    border-radius: 2px;
+    width: 0;
+  }
+  .Text:hover:after {
+    cursor: pointer; 
+    width: 100%; 
+    left: 0; 
+  }
+
