@@ -1,0 +1,68 @@
+.Photo {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    background-color: rgb(177, 177, 177);
+    top: 100px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.Container {
+    max-width: 1245px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.H1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 4rem;
+    width: 40%;
+    color: #0055B8;
+    margin-top: 2%;
+    text-transform: uppercase;
+}
+
+.H2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    width: 60%;
+    text-align: right;
+    margin-left: auto;
+    margin-bottom: 2%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .H1 {
+        font-size: 3.2rem;
+        width: 60%;
+    }
+    .H2 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .H1 {
+        font-size: 2.8rem;
+        width: 80%;
+    }
+    .H2 {
+        font-size: 0.8rem;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .H1 {
+        font-size: 1.7rem;
+        width: 100%;
+    }
+    .H2 {
+        font-size: 0.6rem;
+        width: 100%;
+    }
+}

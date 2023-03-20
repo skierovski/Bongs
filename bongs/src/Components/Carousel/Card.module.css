@@ -1,0 +1,30 @@
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+}
+
+.Photo {
+    border-radius: 7px;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+
+@media only screen and (max-width: 500px){
+    .Photo {
+        width: 100vw;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .Photo {
+        width: 150px;
+        height: 100px;
+    }
+}
+    

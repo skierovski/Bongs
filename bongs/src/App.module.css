@@ -4,5 +4,13 @@
     max-width: 1245px;
     margin: auto;
     margin-top: 1vh;
+    gap: 40vh;
     
 }
+
+@media only screen and (max-width: 500px){
+    .App {
+        gap: 15vh;
+    }
+}
+

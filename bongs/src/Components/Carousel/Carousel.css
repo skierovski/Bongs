@@ -1,0 +1,21 @@
+.Container{
+    display: block;
+    max-width: 1245px;
+    width: 100%;
+}
+
+.Header {
+    color: #0055B8;
+    font-size: 1.5rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.slick-slide {
+    margin-right: 0px;
+}
+
+
+.slick-list {
+    max-height: 300px;
+}
+
