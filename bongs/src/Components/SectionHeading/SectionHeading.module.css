@@ -1,11 +1,12 @@
 .Photo {
-    position: absolute;
-    height: auto;
-    width: 100%;
     background-color: rgb(177, 177, 177);
-    top: 100px;
-    left: 0;
-    right: 0;
+    left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	max-width: 100vw;
+	position: relative;
+	right: 50%;
+	width: 100vw;
     z-index: -1;
 }
 .Container {

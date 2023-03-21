@@ -60,3 +60,29 @@
         font-size: 2.3rem;
     }
 }
+
+@media only screen and (max-width: 450px) {
+    .Container {
+        flex-direction: column;
+        justify-content: normal;
+        gap: 0;
+        height: auto;
+    }
+    .Text {
+        font-size: 1.8rem;
+        width: 100%;
+        max-width: max-content;
+    }
+    .Information {
+        gap: 1vh;
+    }
+    .SmallContainer {
+        gap: 15vw;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .InfText {
+        font-size: 0.6rem;
+    }
+}
