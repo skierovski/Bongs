@@ -8,6 +8,8 @@ const Language = {
         SecondHeader: 'Nasze Produkty',
         ContactUs: 'Napisz do nas !',
         ThirdHeader: 'Oferta',
+        Phone: '+48 600 209 311',
+        Email: 'a.jachimowski@bongs-segregatory.pl',
         HeaderPhone: 'Twoja marka zasluguje na najlepsze. Wybierz opakowania z naszej oferty'
     } ,
     
@@ -20,6 +22,8 @@ const Language = {
         SecondHeader: 'Our Products',
         ContactUs: 'Contact Us !',
         ThirdHeader: 'Offer',
+        Phone: '+48 600 209 313',
+        Email: 'rl@pbpolska.com',
         HeaderPhone: 'Your brand deserves the best. Choose packaging from our offer'
     },
     
@@ -31,7 +35,10 @@ const Language = {
         Description: 'Vårt företag är specialiserat på tillverkning av högkvalitativa förpackningar och mappar. Vi strävar efter att se till att varje av våra produkter är tillverkad av de bästa materialen och uppfyller våra kunders förväntningar. Våra förpackningar är funktionella och estetiska, vilket möjliggör effektivt skydd av produkter och deras lämpliga presentation. Hög kvalitet på våra produkter och uppmärksamhet på detaljer är våra prioriteringar, tack vare vilka vi vinner förtroendet hos våra kunder och uppnår deras nöjdhet med våra tjänster.',
         SecondHeader: 'Våra produkter',
         ContactUs: 'Kontakta oss !',
+        Phone: '+48 600 209 313',
+        Email: 'rl@pbpolska.com',
         ThirdHeader: 'Erbjudande',
+        HeaderPhone: 'Ditt varumärke förtjänar det bästa. Välj förpackning från vårt utbud.'
     },
     German : {
         Products: 'Produkte',
@@ -41,7 +48,10 @@ const Language = {
         Description: 'Unser Unternehmen ist auf die Herstellung von Verpackungen und Ordnern höchster Qualität spezialisiert. Wir streben danach, dass jedes unserer Produkte aus den besten Materialien hergestellt wird und den Erwartungen unserer Kunden entspricht. Unsere Verpackungen sind funktional und ästhetisch, was einen effektiven Schutz der Produkte und ihre angemessene Präsentation ermöglicht. Hohe Qualität unserer Produkte und Liebe zum Detail sind unsere Prioritäten, dank denen wir das Vertrauen unserer Kunden gewinnen und ihre Zufriedenheit mit unseren Dienstleistungen erreichen.',
         SecondHeader: 'unsere Produkte',
         ThirdHeader: 'Angebot',
-        ContactUs: 'Kontaktieren Sie uns !'
+        Phone: '+48 600 209 313',
+        Email: 'rl@pbpolska.com',
+        ContactUs: 'Kontaktieren Sie uns !',
+        HeaderPhone: 'Ihre Marke verdient das Beste. Wählen Sie die Verpackung aus unserem Angebot.'
     }
 }
 

@@ -12,7 +12,7 @@ export default function Footer() {
             <div className={styles.SmallContainer}>
             <span className={styles.RightText}>Sad Rejonowy Gdansk-Polnoc w Gdansku</span>
             <span className={styles.RightText}>VIII Wydzial Gospodarczy Krajowego Rejestru Sadowego</span>
-            <span className={styles.RightText}>KRS: 0000065269NIP: 593-23-07-194</span>
+            <span className={styles.RightText}>KRS: 0000065269 NIP: 593-23-07-194</span>
             </div>
             </div>
         </div>

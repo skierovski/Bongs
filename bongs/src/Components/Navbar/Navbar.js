@@ -40,6 +40,10 @@ export default function Navbar(content) {
     language2 = 'EN'
     language4 = 'PL'
   }
+
+  function WindowScroll(position) {
+    window.scrollTo(0, position)
+  }
   return (
     <Grid container sx={{position: width < 450? 'sticky': 'static', top: '0', zIndex: '10'}}>
         <Grid item xs={9} sx={{display: 'flex', justifyContent: 'flex-start', alignItems: 'center'}}>
@@ -48,9 +52,9 @@ export default function Navbar(content) {
         <Grid item xs={3} sx={{display: 'flex', justifyContent: 'flex-end', gap: '5vw', alignItems: 'center'}}>
         {width > 750?
             <>
-            <button className={styles.Text} style={{ fontSize: '1.2rem', color: 'black', display: 'inline-block', backgroundColor: 'transparent', position: 'relative', border: 'none', fontFamily: 'Outfit, sans-serif', fontWeight: '400' }}>{content.content.Products}</button>
-            <button className={styles.Text} style={{ fontSize: '1.2rem', color: 'black', display: 'inline-block', backgroundColor: 'transparent', position: 'relative', border: 'none', fontFamily: 'Outfit, sans-serif', fontWeight: '400' }}>{content.content.Calculation}</button>
-            <button className={styles.Text} style={{ fontSize: '1.2rem', color: 'black', display: 'inline-block', backgroundColor: 'transparent', position: 'relative', border: 'none', fontFamily: 'Outfit, sans-serif', fontWeight: '400' }}>{content.content.Contact}</button>
+            <button className={styles.Text} style={{ fontSize: '1.2rem', color: 'black', display: 'inline-block', backgroundColor: 'transparent', position: 'relative', border: 'none', fontFamily: 'Outfit, sans-serif', fontWeight: '400' }} onClick={() => WindowScroll(1150)}>{content.content.Products}</button>
+            <button className={styles.Text} style={{ fontSize: '1.2rem', color: 'black', display: 'inline-block', backgroundColor: 'transparent', position: 'relative', border: 'none', fontFamily: 'Outfit, sans-serif', fontWeight: '400' }} onClick={() => WindowScroll(575)}>{content.content.Calculation}</button>
+            <button className={styles.Text} style={{ fontSize: '1.2rem', color: 'black', display: 'inline-block', backgroundColor: 'transparent', position: 'relative', border: 'none', fontFamily: 'Outfit, sans-serif', fontWeight: '400' }} onClick={() => WindowScroll(4150)}>{content.content.Contact}</button>
             </>
         :
         <>

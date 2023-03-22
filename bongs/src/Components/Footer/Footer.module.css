@@ -11,6 +11,8 @@
     border-radius: 5px;
     height: auto;
     display: flex;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .SmallContainer {
@@ -39,12 +41,12 @@
 
 @media only screen and (max-width: 450px) {
     .FlexContainer {
-        gap: 5vw;
+        gap: 1vw;
     }
     .Text {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     .RightText {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 }

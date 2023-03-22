@@ -8,6 +8,7 @@ import Carousel from './Components/Carousel/Carousel';
 import ContactUs from './Components/ContactUs/ContactUs';
 import Offer from './Components/Offer/Offer';
 import Footer from './Components/Footer/Footer';
+import CookieConsent from "react-cookie-consent";
 
 function App() {
   const [width, setWidth] = useState(window.innerWidth)
@@ -64,6 +65,7 @@ function App() {
       <ContactUs content={content}/>
       <Footer/>
       </BaseContext.Provider>
+      <CookieConsent style={{background: "rgba(0, 85, 184, 0.43)", borderRadius: '5px', boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)', backdropFilter: 'blur(5px)', border: '1px solid rgba(0, 85, 184, 0.3)', WebkitBackdropFilter: 'blur(5px', fontFamily: 'Outfit, sans-serif', fontSize: '1rem'}} buttonStyle={{ background: "white", fontSize: "13px", color: 'black', borderRadius: '7px', fontFamily: 'Outfit, sans-serif', marginRight: '5px'}}>This website uses cookies to enhance the user experience.</CookieConsent>
     </div>
   );
 }

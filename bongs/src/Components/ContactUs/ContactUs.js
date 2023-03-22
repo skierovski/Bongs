@@ -17,11 +17,11 @@ export default function ContactUs(content) {
         <div className={styles.Information}>
             <div className={styles.SmallContainer}>
                 <SmartphoneIcon fontSize="large"/>
-            <span className={styles.InfText}>+48 600 209 311</span>
+            <span className={styles.InfText}>{content.content.Phone}</span>
             </div>
             <div className={styles.SmallContainer}>
                 <EmailIcon fontSize="large"/>
-            <span className={styles.InfText}>a.jachimowski@bongs-segregatory.pl</span>
+            <span className={styles.InfText}>{content.content.Email}</span>
             </div>
             <div className={styles.SmallContainer}>
                 <RoomIcon fontSize="large"/>
@@ -35,11 +35,11 @@ export default function ContactUs(content) {
             <div className={styles.Information}>
             <div className={styles.SmallContainer}>
                 <SmartphoneIcon fontSize="medium"/>
-            <span className={styles.InfText}>+48 600 209 311</span>
+            <span className={styles.InfText}>{content.content.Phone}</span>
             </div>
             <div className={styles.SmallContainer}>
                 <EmailIcon fontSize="medium"/>
-            <span className={styles.InfText}>a.jachimowski@bongs-segregatory.pl</span>
+            <span className={styles.InfText}>{content.content.Email}</span>
             </div>
             <div className={styles.SmallContainer}>
                 <RoomIcon fontSize="medium"/>
