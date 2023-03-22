@@ -107,6 +107,22 @@
     text-align: center;
   }
 
+  @media only screen and (max-width: 450px) {
+    .LangButton{
+      margin-right: 2px;
+    }
+    .AdditionalLang {
+      margin-right: 2px;
+    }
+    .AdditionalLang2 {
+      margin-right: 2px;
+    }
+    .AdditionalLang3 {
+      margin-right: 2px;
+    }
+  }
+
+
   @media only screen and (max-width: 300px) {
     .AdditionalLang{
       animation-name: movePhone;

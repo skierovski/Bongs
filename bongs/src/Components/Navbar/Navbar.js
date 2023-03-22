@@ -41,7 +41,7 @@ export default function Navbar(content) {
     language4 = 'PL'
   }
   return (
-    <Grid container>
+    <Grid container sx={{position: width < 450? 'sticky': 'static', top: '0', zIndex: '10'}}>
         <Grid item xs={9} sx={{display: 'flex', justifyContent: 'flex-start', alignItems: 'center'}}>
         <img className={styles.Logo} src={image} alt="logo"></img>
         </Grid>

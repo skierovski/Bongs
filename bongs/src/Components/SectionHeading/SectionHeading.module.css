@@ -35,6 +35,14 @@
     margin-bottom: 2%;
 }
 
+.Phone {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.4rem;
+    width: 100%; 
+    text-transform: uppercase;   
+    color: #0055B8;
+    margin-top: 70%;
+}
 
 @media only screen and (max-width: 1000px) {
     .H1 {
@@ -65,5 +73,12 @@
     .H2 {
         font-size: 0.6rem;
         width: 100%;
+    }
+    .Photo {
+        height: 50vh;
+    }
+    .Container {
+        justify-content: center;
+        align-items: center;
     }
 }

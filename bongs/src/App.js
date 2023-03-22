@@ -6,6 +6,8 @@ import Language from './Language.js';
 import Sectionheading from './Components/SectionHeading/SectionHeading';
 import Carousel from './Components/Carousel/Carousel';
 import ContactUs from './Components/ContactUs/ContactUs';
+import Offer from './Components/Offer/Offer';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   const [width, setWidth] = useState(window.innerWidth)
@@ -58,7 +60,9 @@ function App() {
       <Navbar content={content}/>
       <Sectionheading content={content}/>
       <Carousel content={content}/>
+      <Offer content={content}/>
       <ContactUs content={content}/>
+      <Footer/>
       </BaseContext.Provider>
     </div>
   );
