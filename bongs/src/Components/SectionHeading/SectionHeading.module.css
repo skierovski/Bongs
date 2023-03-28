@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@900&display=swap');
+
 .Photo {
-    background-image: url(../../images/Ask.JPG);
+    background-image: url(../../images/maszyna_italia_poziom.jpg);
     background-size: cover;
-    background-position: 30% 60%;
+    background-position: 50% 40%;
+    image-rendering: pixelated;
     left: 50%;
 	margin-left: -50vw;
 	margin-right: -50vw;
@@ -9,42 +12,98 @@
 	position: relative;
 	right: 50%;
 	width: 100vw;
-    z-index: -1;
+    z-index: 0;
+    height: 50vh;
+    min-height: 450px;
 }
+
+.ContactUs {
+    color: black;
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-family: 'Cabin', sans-serif;
+}
+
+.SmallContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 5%;
+
+}
+
+@media only screen and (max-width: 450px) {
+    .Photo{
+        background-image: url(../../images/maszyna_italia_pion.jpg);
+        background-position: 0% 20%;
+    }
+}
+
+
 .Container {
     max-width: 1245px;
     margin: auto;
+    width: 97%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    min-height: 450px;
     
 }
 
-.H1 {
-    font-family: 'Outfit', sans-serif;
-    font-size: 4rem;
-    width: 40%;
+.Link {
+    text-decoration: none;
     color: #0055B8;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.2rem;
+    display: block;
+    white-space: nowrap;
+}
+
+.H1 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 4rem;
+    width: 50%;
+    color: white;
     margin-top: 2%;
     text-transform: uppercase;
+    font-weight: bold;
+    margin-right: auto;
 }
 
-.H2 {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.2rem;
-    width: 60%;
-    text-align: right;
+.Box{
+    display: block;
+    align-self: flex-end;
+    background-color: white;
     margin-left: auto;
+    width: auto;
+    height: auto;
     margin-bottom: 2%;
-    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    border-radius: 7px;
+    align-items: center;
+    padding-right: 1vw;
+    padding-left: 1vw;
 }
+@media only screen and (max-width: 450px) {
+    .Box {
+        align-self: flex-end;
+        margin-top: 2%;
+    }
+}
+
 
 .Phone {
-    font-family: 'Outfit', sans-serif;
+    position: absolute;
+    font-family: 'Cabin', sans-serif;
     font-size: 1.4rem;
     width: 100%; 
     text-transform: uppercase;   
-    color: #0055B8;
-    margin-top: 5%;
+    color: white;
+    margin-bottom: 70%;
 }
 
 @media only screen and (max-width: 1000px) {

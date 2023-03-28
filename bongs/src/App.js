@@ -1,14 +1,17 @@
 import styles from './App.module.css'
 import Navbar from './Components/Navbar/Navbar';
 import BaseContext from './Context/BaseContext';
-import { useState, useEffect } from 'react';
+import { useState, useEffect} from 'react';
 import Language from './Language.js';
 import Sectionheading from './Components/SectionHeading/SectionHeading';
-import Carousel from './Components/Carousel/Carousel';
-import ContactUs from './Components/ContactUs/ContactUs';
-import Offer from './Components/Offer/Offer';
-import Footer from './Components/Footer/Footer';
 import CookieConsent from "react-cookie-consent";
+import ReactGA from 'react-ga4'
+import Carousel from './Components/Carousel/Carousel.js';
+import Offer from './Components/Offer/Offer.js';
+import Footer from './Components/Footer/Footer.js';
+import Opinion from './Components/Opinion/Opinion';
+
+
 
 function App() {
   const [width, setWidth] = useState(window.innerWidth)
@@ -52,6 +55,11 @@ function App() {
   else {
     content = Language.English
   }
+
+  function Accepted() {
+    console.log(process.env.REACT_APP_GOOGLE_ID)
+    ReactGA.initialize(process.env.REACT_APP_GOOGLE_ID)
+  }
   return (
     <div className={styles.App}>
        <BaseContext.Provider value={{
@@ -60,12 +68,12 @@ function App() {
          setLanguage}} >
       <Navbar content={content}/>
       <Sectionheading content={content}/>
+      <Opinion content={content}/>
       <Carousel content={content}/>
       <Offer content={content}/>
-      <ContactUs content={content}/>
       <Footer/>
       </BaseContext.Provider>
-      <CookieConsent style={{background: "rgba(0, 85, 184, 0.43)", borderRadius: '5px', boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)', backdropFilter: 'blur(5px)', border: '1px solid rgba(0, 85, 184, 0.3)', WebkitBackdropFilter: 'blur(5px', fontFamily: 'Outfit, sans-serif', fontSize: '1rem'}} buttonStyle={{ background: "white", fontSize: "13px", color: 'black', borderRadius: '7px', fontFamily: 'Outfit, sans-serif', marginRight: '5px'}}>This website uses cookies to enhance the user experience.</CookieConsent>
+      <CookieConsent onAccept={() => Accepted() } enableDeclineButton  declineButtonStyle={{ background: "white", fontSize: "13px", color: 'black', borderRadius: '7px', fontFamily: 'Outfit, sans-serif', marginRight: '5px'}} style={{background: "rgba(0, 85, 184, 0.43)", borderRadius: '5px', boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)', backdropFilter: 'blur(5px)', border: '1px solid rgba(0, 85, 184, 0.3)', WebkitBackdropFilter: 'blur(5px', fontFamily: 'Outfit, sans-serif', fontSize: '0.5rem', alignItems: 'center'}} buttonStyle={{ background: "white", fontSize: "13px", color: 'black', borderRadius: '7px', fontFamily: 'Outfit, sans-serif', marginRight: '5px'}}>{content.Cookie}</CookieConsent>
     </div>
   );
 }

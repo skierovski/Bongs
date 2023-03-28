@@ -2,11 +2,12 @@ import React from "react";
 import Slider from "react-slick";
 import Card from "./Card";
 import './Carousel.css'
-import photo_1 from '../../images/Bjurfors.JPG'
-import photo_2 from '../../images/Ask.JPG'
-import photo_3 from '../../images/Connect.JPG'
-import photo_4 from '../../images/Stelara.JPG'
-import photo_5 from '../../images/Sudd-Lee.JPG'
+import photo_1 from '../../images/slajder5.jpg'
+import photo_2 from '../../images/slajder6.jpg'
+import photo_3 from '../../images/slajder7.jpg'
+import photo_4 from '../../images/slajder8.jpg'
+import photo_5 from '../../images/slajder2.jpg'
+import photo_6 from '../../images/opakowania.jpg'
 
 export default function Carousel(content) {
   const image1 = {
@@ -24,6 +25,9 @@ export default function Carousel(content) {
   const image5 = {
     photo: photo_5
   }
+  const image6 = {
+    photo: photo_6
+  }
     var settings = {
         dots: true,
         infinite: true,
@@ -31,7 +35,7 @@ export default function Carousel(content) {
         slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         arrows: false,
         responsive: [
@@ -39,7 +43,7 @@ export default function Carousel(content) {
               breakpoint: 1280,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: true
               }
@@ -70,6 +74,7 @@ export default function Carousel(content) {
                 dots: false
               }
             }
+
           ]
       };
     return (
@@ -81,11 +86,7 @@ export default function Carousel(content) {
             <Card photo={image3.photo}/>
             <Card photo={image4.photo}/>
             <Card photo={image5.photo}/>
-            <Card photo={image1.photo}/>
-            <Card photo={image2.photo}/>
-            <Card photo={image3.photo}/>
-            <Card photo={image4.photo}/>
-            <Card photo={image5.photo}/>
+            <Card photo={image6.photo}/>
         </Slider>
         </div>
     )

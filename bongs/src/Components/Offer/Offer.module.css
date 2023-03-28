@@ -7,6 +7,7 @@
     justify-content: space-between;
 }
 
+
 @media only screen and (max-width: 850px) {
     .Container {
         justify-content: center;
@@ -23,10 +24,5 @@
 .Title {
     color: #0055B8;
     font-size: 1.5rem;
-    font-family: 'Outfit', sans-serif;
-}
-
-.Description {
-    margin-bottom: 5px;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Cabin', sans-serif;
 }

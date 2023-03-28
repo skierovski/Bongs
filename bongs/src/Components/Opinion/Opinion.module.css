@@ -1,0 +1,31 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
+    border-radius: 5px;
+    padding: 5%;
+    gap: 10px;
+}
+
+.Opinion {
+    font-size: 1.6rem;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 450px) {
+    .Container {
+        width: 90%;
+    }
+}
+
+.Stars {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

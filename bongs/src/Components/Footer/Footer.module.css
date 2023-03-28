@@ -23,30 +23,40 @@
 
 .Text {
     font-size: 0.9rem;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Cabin', sans-serif;
     text-align: left;
+    margin-left: 3%;
 }
 .RightText {
     font-size: 0.9rem;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Cabin', sans-serif;
     text-align: right;
+    white-space: nowrap;
+    margin-right: 3%;
 }
 
 .FlexContainer {
     display: flex;
     max-width: 1245px;
     margin: auto;
-    gap: 35vw;
+    width: 100%;
+    justify-content: space-between;
 }
 
-@media only screen and (max-width: 450px) {
-    .FlexContainer {
-        gap: 1vw;
-    }
+@media only screen and (max-width: 600px) {
     .Text {
         font-size: 0.6rem;
     }
     .RightText {
         font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .Text {
+        font-size: 0.4rem;
+    }
+    .RightText {
+        font-size: 0.4rem;
     }
 }

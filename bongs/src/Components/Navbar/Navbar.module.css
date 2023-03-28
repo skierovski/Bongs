@@ -21,6 +21,8 @@
 
 .Text {
     cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 100;
 }
 
 
@@ -31,7 +33,8 @@
     width: 40px;
     height: 40px;
     font-size: 20px;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Cabin', sans-serif;
+    padding: 7px;
 }
 
 @media only screen and (max-width: 300px) {
@@ -64,8 +67,23 @@
 
   .AdditionalLang{
     position: absolute;
+    background-color: black;
+    visibility: hidden;
+    color: white;
+    border-radius: 7px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    padding: 7px;
+  }
+
+  .AdditionalLangAnimate {
+    position: absolute;
+    visibility: visible;
     animation-name: move;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
     background-color: black;
     color: white;
@@ -73,67 +91,144 @@
     width: 40px;
     height: 40px;
     font-size: 20px;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Cabin', sans-serif;
     text-align: center;
+    padding: 7px;
   }
 
   .AdditionalLang2 {
     position: absolute;
+    background-color: black;
+    visibility: hidden;
+    color: white;
+    border-radius: 7px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    padding: 7px;
+  }
+
+  .AdditionalLangAnimate2 {
+    position: absolute;
+    visibility: visible;
     animation-name: move2;
     animation-fill-mode: forwards;
-    animation-duration: 1s;
+    animation-duration: 3s;
     background-color: black;
     color: white;
     border-radius: 7px;
     width: 40px;
     height: 40px;
     font-size: 20px;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Cabin', sans-serif;
     text-align: center;
+    padding: 7px;
   }
 
   .AdditionalLang3 {
     position: absolute;
-    animation-name: move3;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
+    visibility: hidden;
     background-color: black;
     color: white;
     border-radius: 7px;
     width: 40px;
     height: 40px;
     font-size: 20px;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Cabin', sans-serif;
     text-align: center;
+    padding: 7px;
   }
+
+  .AdditionalLangAnimate3 {
+    position: absolute;
+    animation-name: move3;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    padding: 7px;
+  }
+
+
+  .Link {
+    text-decoration: none;
+    color: #0055B8;
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.9rem;
+    display: block;
+    white-space: nowrap;
+}
 
   @media only screen and (max-width: 450px) {
     .LangButton{
       margin-right: 2px;
+      padding: 7px;
     }
     .AdditionalLang {
       margin-right: 2px;
+      padding: 7px;
     }
     .AdditionalLang2 {
       margin-right: 2px;
+      padding: 7px;
     }
     .AdditionalLang3 {
       margin-right: 2px;
+      padding: 7px;
     }
   }
 
+  .WrapperContact {
+    display: flex;
+    flex-direction: column;
+  }
 
-  @media only screen and (max-width: 300px) {
+  .DropdownContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    background: #ffffffb6;
+  }
+
+  .MenuText {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Cabin', sans-serif;
+    background: transparent;
+    border-top: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    height: 50px;
+    color: black;
+    font-size: 1.3rem;
+  }
+
+  .MenuText:hover {
+    background-color: rgb(235, 235, 235);
+  }
+
+  @media only screen and (max-width: 450px) {
     .AdditionalLang{
       animation-name: movePhone;
     }
   }
-  @media only screen and (max-width: 300px) {
+  @media only screen and (max-width: 450px) {
     .AdditionalLang2{
       animation-name: movePhone2;
     }
   }
-  @media only screen and (max-width: 300px) {
+  @media only screen and (max-width: 450px) {
     .AdditionalLang3{
       animation-name: movePhone3;
     }
@@ -143,28 +238,28 @@
 
   @keyframes move {
     0%{
-      top: 20px;
+      top: 40px;
     }
     100%{
-      top: 58px;
+      top: 75px;
     }
   }
 
   @keyframes move2 {
     0%{
-      top: 20px;
+      top: 40px;
     }
     100%{
-      top: 100px;
+      top: 120px;
     }
   }
 
   @keyframes move3 {
     0%{
-      top: 20px;
+      top: 40px;
     }
     100%{
-      top: 142px;
+      top: 165px;
     }
   }
 
@@ -174,7 +269,7 @@
       top: 20px;
     }
     100%{
-      top: 44px;
+      top: 55px;
     }
   }
 
@@ -183,7 +278,7 @@
       top: 20px;
     }
     100%{
-      top: 76px;
+      top: 98px;
     }
   }
   @keyframes movePhone3 {
@@ -191,6 +286,6 @@
       top: 20px;
     }
     100%{
-      top: 108px;
+      top: 140px;
     }
   }
