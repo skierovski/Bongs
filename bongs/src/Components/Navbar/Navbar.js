@@ -66,15 +66,15 @@ export default function Navbar(content) {
     GoogleAnalitics()
   }
   return (
-    <Grid container sx={{position: width < 450? 'sticky': 'static', top: '0', zIndex: '10', backgroundColor: 'white'}}>
+    <Grid container sx={{position: width < 450? 'sticky': 'static', top: '0', zIndex: '10', backgroundColor: 'white', paddingLeft: '5px', paddingRight: '5px'}}>
         <Grid item xs={9} sx={{display: 'flex', justifyContent: 'flex-start', alignItems: 'center'}}>
         <img className={styles.Logo} src={image} alt="logo"></img>
         </Grid>
         <Grid item xs={3} sx={{display: 'flex', justifyContent: 'flex-end', gap: '5vw', alignItems: 'center'}}>
         {width > 750?
             <>
-            <button className={styles.Text} style={{ fontSize: '1.2rem', color: 'black', display: 'inline-block', backgroundColor: 'transparent', position: 'relative', border: 'none', fontFamily: 'Outfit, sans-serif', fontWeight: '400' }} onClick={() => WindowScroll(575, false)}>{content.content.Products}</button>
-            <button className={styles.Text} style={{ fontSize: '1.2rem', color: 'black', display: 'inline-block', backgroundColor: 'transparent', position: 'relative', border: 'none', fontFamily: 'Outfit, sans-serif', fontWeight: '400' }} onClick={() => WindowScroll(1150, false)}>{content.content.Calculation}</button>
+            <button className={styles.Text} style={{ fontSize: '1.2rem', color: 'black', display: 'inline-block', backgroundColor: 'transparent', position: 'relative', border: 'none', fontFamily: 'Cabin, sans-serif', fontWeight: '400' }} onClick={() => WindowScroll(575, false)}>{content.content.Products}</button>
+            <button className={styles.Text} style={{ fontSize: '1.2rem', color: 'black', display: 'inline-block', backgroundColor: 'transparent', position: 'relative', border: 'none', fontFamily: 'Cabin, sans-serif', fontWeight: '400' }} onClick={() => WindowScroll(1150, false)}>{content.content.Calculation}</button>
             <div className={styles.WrapperContact}>
             <div className={styles2.SmallContainer}>
                 <EmailIcon fontSize="medium" sx={{color: '#0055B8'}}/>
@@ -100,7 +100,6 @@ export default function Navbar(content) {
          <div className={styles.DropdownContainer}>
           <button className={styles.MenuText} onClick={() => WindowScroll(400, true)}>{content.content.Products}</button>
           <button className={styles.MenuText} onClick={() => WindowScroll(700, true)}>{content.content.Calculation}</button>
-          <button className={styles.MenuText} onClick={() => WindowScroll(4700, true)}>{content.content.Contact}</button>
          </div>
          :
          <></>

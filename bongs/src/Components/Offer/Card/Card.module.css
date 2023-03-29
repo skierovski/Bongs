@@ -12,6 +12,18 @@
     max-height: 175px;
 }
 
+.Adnotation {
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    color: black;
+}
+
+.Link {
+    text-decoration: none;
+    color: #0055B8;
+    font-size: 1.2rem;
+}
 .ImageBoxBig {
     width: 80%;
     height: 80%;

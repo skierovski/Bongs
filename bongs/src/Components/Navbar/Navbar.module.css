@@ -83,7 +83,7 @@
     position: absolute;
     visibility: visible;
     animation-name: move;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     background-color: black;
     color: white;
@@ -115,7 +115,7 @@
     visibility: visible;
     animation-name: move2;
     animation-fill-mode: forwards;
-    animation-duration: 3s;
+    animation-duration: 1s;
     background-color: black;
     color: white;
     border-radius: 7px;
@@ -145,7 +145,7 @@
     position: absolute;
     animation-name: move3;
     animation-fill-mode: forwards;
-    animation-duration: 3s;
+    animation-duration: 1s;
     background-color: black;
     color: white;
     border-radius: 7px;
@@ -169,7 +169,6 @@
 
   @media only screen and (max-width: 450px) {
     .LangButton{
-      margin-right: 2px;
       padding: 7px;
     }
     .AdditionalLang {
@@ -238,54 +237,54 @@
 
   @keyframes move {
     0%{
-      top: 40px;
+      transform: translateY(0px)
     }
     100%{
-      top: 75px;
+      transform: translateY(42px)
     }
   }
 
   @keyframes move2 {
     0%{
-      top: 40px;
+      transform: translateY(0px)
     }
     100%{
-      top: 120px;
+      transform: translateY(84px)
     }
   }
 
   @keyframes move3 {
     0%{
-      top: 40px;
+      transform: translateY(0px)
     }
     100%{
-      top: 165px;
+      transform: translateY(126px)
     }
   }
 
 
   @keyframes movePhone {
     0%{
-      top: 20px;
+      transform: translateY(0px)
     }
     100%{
-      top: 55px;
+      transform: translateY(41px)
     }
   }
 
   @keyframes movePhone2 {
     0%{
-      top: 20px;
+      transform: translateY(0px)
     }
     100%{
-      top: 98px;
+      transform: translateY(82px)
     }
   }
   @keyframes movePhone3 {
     0%{
-      top: 20px;
+      transform: translateY(0px)
     }
     100%{
-      top: 140px;
+      transform: translateY(124px)
     }
   }

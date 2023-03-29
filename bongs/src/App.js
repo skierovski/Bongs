@@ -73,7 +73,7 @@ function App() {
       <Offer content={content}/>
       <Footer/>
       </BaseContext.Provider>
-      <CookieConsent onAccept={() => Accepted() } enableDeclineButton  declineButtonStyle={{ background: "white", fontSize: "13px", color: 'black', borderRadius: '7px', fontFamily: 'Outfit, sans-serif', marginRight: '5px'}} style={{background: "rgba(0, 85, 184, 0.43)", borderRadius: '5px', boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)', backdropFilter: 'blur(5px)', border: '1px solid rgba(0, 85, 184, 0.3)', WebkitBackdropFilter: 'blur(5px', fontFamily: 'Outfit, sans-serif', fontSize: '0.5rem', alignItems: 'center'}} buttonStyle={{ background: "white", fontSize: "13px", color: 'black', borderRadius: '7px', fontFamily: 'Outfit, sans-serif', marginRight: '5px'}}>{content.Cookie}</CookieConsent>
+      <CookieConsent onAccept={() => Accepted() } buttonText={content.CookieButtonAccept} location="top" declineButtonText={content.CookieButtonDecline} enableDeclineButton  declineButtonStyle={{ background: "white", fontSize: "13px", color: 'black', borderRadius: '7px', fontFamily: 'Outfit, sans-serif', marginRight: '5px'}} style={{background: "rgba(0, 85, 184, 0.43)", borderRadius: '5px', boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)', backdropFilter: 'blur(5px)', border: '1px solid rgba(0, 85, 184, 0.3)', WebkitBackdropFilter: 'blur(5px', fontFamily: 'Outfit, sans-serif', fontSize: '0.8rem', alignItems: 'center'}} buttonStyle={{ background: "white", fontSize: "13px", color: 'black', borderRadius: '7px', fontFamily: 'Outfit, sans-serif', marginRight: '5px'}}>{content.Cookie}</CookieConsent>
     </div>
   );
 }

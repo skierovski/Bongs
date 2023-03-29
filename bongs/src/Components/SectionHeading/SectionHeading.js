@@ -21,8 +21,8 @@ const Sectionheading = (content) =>{
     return(
         <Box sx={{height: 'auto', width: '100%'}}>
             <div className={styles.Photo}>
-                {width > 450? 
-                <div className={styles.Container}>
+                {width > 580? 
+                <div className={styles.Container} style={{maxWidth: width < 1245? width: '1245px'}}>
                 <h1 className={styles.H1}>{content.content.Header}</h1>
                 <div className={styles.Box}>
                 <span className={styles.ContactUs}>{content.content.ContactUs}</span>
@@ -37,7 +37,7 @@ const Sectionheading = (content) =>{
                 </div>
             </div>
             :
-            <div className={styles.Container}>
+            <div className={styles.Container} style={{maxWidth: width < 1245? width: '1245px'}}>
                 <h1 className={styles.Phone}>{content.content.HeaderPhone}</h1>
                 <div className={styles.Box}>
                 <span className={styles.ContactUs}>{content.content.ContactUs}</span>
